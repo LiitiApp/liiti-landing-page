@@ -1,0 +1,16 @@
+/*
+Custom Css
+*/
+.how-it-works {
+    background: #ded4dc;
+}
+.how-it-works__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.how-it-works__item > i {
+    font-size: 32px;
+}
