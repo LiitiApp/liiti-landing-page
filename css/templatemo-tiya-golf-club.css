@@ -721,7 +721,7 @@ strong {
   margin-bottom: -70px;
 }
 
-.section-bg-image .container .row {
+.section-bg-image.video .container .row {
   width: 100%;
   height: calc(50vh);
 }
