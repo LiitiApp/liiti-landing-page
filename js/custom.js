@@ -29,13 +29,13 @@
     });
     
     $(document).ready(function() {
-      let lastScrollTop = 0;
+      const scrollTop = 0;
       
       $(window).scroll(function() {
-          let currentScrollTop = $(this).scrollTop();
+          const currentScrollTop = $(this).scrollTop();
           
           // Check if scrolling down
-          if (currentScrollTop > lastScrollTop) {
+          if (currentScrollTop > scrollTop) {
               $('#brand-image').removeClass('navbar-brand-image-big');
           } else {
               $('#brand-image').addClass('navbar-brand-image-big');
