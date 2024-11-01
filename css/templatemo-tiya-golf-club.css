@@ -466,8 +466,6 @@ strong {
 .navbar {
   background: transparent;
   z-index: 99;
-  padding-top: 15px;
-  padding-bottom: 15px;
 }
 
 .navbar-brand,
@@ -485,8 +483,13 @@ strong {
 }
 
 .navbar-brand-image {
-  width: 48px;
-  height: 48px;
+  width: 60px;
+  height: 60px;
+}
+
+.navbar-brand-image-big {
+  width: 180px;
+  height: 180px;
 }
 
 .navbar-brand-text {
