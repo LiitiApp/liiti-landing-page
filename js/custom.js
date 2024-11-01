@@ -27,7 +27,22 @@
         }, 300);
       }
     });
-  
+    
+    $(document).ready(function() {
+      const scrollTop = 0;
+      
+      $(window).scroll(function() {
+          const currentScrollTop = $(this).scrollTop();
+          
+          // Check if scrolling down
+          if (currentScrollTop > scrollTop) {
+              $('#brand-image').removeClass('navbar-brand-image-big');
+          } else {
+              $('#brand-image').addClass('navbar-brand-image-big');
+          }          
+      });
+  });
+
   })(window.jQuery);
 
 
