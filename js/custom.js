@@ -2,6 +2,7 @@
   (function ($) {
   
   "use strict";
+  const TABLET_WIDTH = 768;
 
     // MENU
     $('.navbar-collapse a').on('click',function(){
@@ -29,18 +30,28 @@
     });
     
     $(document).ready(function() {
-      const scrollTop = 0;
+      const scrollTop = 10;
       
       $(window).scroll(function() {
-          const currentScrollTop = $(this).scrollTop();
-          
-          // Check if scrolling down
-          if (currentScrollTop > scrollTop) {
-              $('#brand-image').removeClass('navbar-brand-image-big');
-          } else {
-              $('#brand-image').addClass('navbar-brand-image-big');
-          }          
-      });
+        const currentScrollTop = $(this).scrollTop();
+
+        const isMobile = window.innerWidth <= TABLET_WIDTH; // Check if the screen is mobile-sized
+        
+        if (!isMobile) {
+            // Check if scrolling down
+            if (currentScrollTop > scrollTop) {
+                $('#brand-image').css({ width: '60px', height: '60px' });
+            } else {
+                $('#brand-image').css({ width: '148px', height: '148px' });
+            }
+        } else {
+            // On mobile, ensure the image stays small
+            $('#brand-image').css({ width: '60px', height: '60px' });
+        }
+        
+        // Update scrollTop for the next scroll event
+        scrollTop = currentScrollTop;
+    });
   });
 
   })(window.jQuery);
