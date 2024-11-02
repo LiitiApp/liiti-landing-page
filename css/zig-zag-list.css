@@ -22,6 +22,10 @@
     transition: var(--trans);
 }
 
+.member h1 {
+    color: var(--secondary-color);
+}
+
 .member:nth-of-type(even) {
     text-align: right;
 }
