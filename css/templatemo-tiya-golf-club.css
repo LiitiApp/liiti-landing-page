@@ -733,9 +733,6 @@ strong {
 .section-bg-image .container {
   margin-block: 42px;
 }
-.section-bg-image .container .row {
-  width: 100%;
-}
 
 .section-bg-image .container+svg {
   transform: rotate(180deg);
