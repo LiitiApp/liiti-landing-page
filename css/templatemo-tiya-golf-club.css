@@ -188,9 +188,17 @@ strong {
 
 .cd-headline.slide-in-1 strong {
   opacity: 0;
+  position: absolute;
+  top: -40px;
   transform-origin: 50% 100%;
   transform: translateX(100%);
   transition: transform 2s ease, opacity 2s ease;
+}
+
+@media (max-width: 768px) {
+  .cd-headline.slide-in-1 strong {
+    top: -36px;
+  }
 }
 
 .cd-headline.slide-in-1 strong.is-visible {
