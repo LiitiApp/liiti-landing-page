@@ -68,7 +68,6 @@
 .member:hover {
     transform: scale(0.85);
     transition: var(--trans);
-    filter: drop-shadow(0px 20px 10px #0008);
 }
 
 .action-list .member:not(:first-child) {
