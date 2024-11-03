@@ -205,7 +205,7 @@ strong {
 
 .cd-headline.slide-in-1 strong.is-hidden {
   opacity: 0;
-  transform: translateY(-250px);
+  transform: translate3d(40px, 40px, 10px);
 }
 
 .text-white {
